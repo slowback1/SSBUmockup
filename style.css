@@ -1,0 +1,163 @@
+/* 
+reset 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/*
+ page 1
+*/
+body {
+    background-color: #222;
+}
+.main {
+    background-image: url("img/bg01.jpg");
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.spiritHead {
+    margin-top: 20px;
+    width: 100%;
+    height: 48px;
+}
+.spiritHead h1 {
+    color: #eee;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+}
+.spiritBody {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.spiritImg {
+    margin-top: 20px;
+    margin-left: 1%;
+    width: 80%;
+    height: auto;
+}
+.spiritImg img {
+    width: 100%;
+    height: auto;
+}
+.spiritTxt {
+    margin-right: 0px;
+    color: #eee;
+    font-size: 24px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.spiritTxt a {
+    padding-top: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+
+/*
+page 2
+*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.selectMain {
+    width: 100vw;
+    height: 100vh;
+    
+}
+.selectHead {
+    width: 100%;
+    height: 48px;
+    background-color: #666;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0;
+    padding:0;
+    justify-content: center;
+}
+.searchBar {
+    width: 50%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-indent: 10px;
+    font-size: 32px;
+}
+.selectIcons {
+    background-color: #eee;
+    width: 80%;
+    max-height: 85vh;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.selectIcon {
+    margin: 0;
+    padding: 0;
+    width: 19.8%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #666;
+}
+.imgBox {
+    margin-top: 5px;
+    width: 80%;
+    height: 220px;
+    overflow: hidden;
+    border: 2px solid gray;
+}
+.selectIcon .imgBox img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1300px) {
+    .selectIcon {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .selectIcon {
+         width: 90%;   
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footer {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
